@@ -10,7 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   background-image: url('background_image.jpg'); /* Replace with your image path */
-  background-size: fit;
+  background-size: cover;
   background-position: center;
   margin: 0;
   min-height: 100vh;
@@ -78,7 +78,7 @@ h1 {
 </head>
 <body>
 
-<h1>J & J Auto Sales</h1>
+<h1>🎄🎄🎄 HO HO HO! Jamie Vs Santa 🎄🎄🎄</h1>
 
 <div class="flip-card-container" id="cardContainer">
   <!-- Cards will be generated here by JavaScript -->
@@ -87,32 +87,50 @@ h1 {
 <script>
 // Define card data
 const cardData = [
+  // 3 prizes of 300 MAD
   {amount: "300 MAD", question: null},
-  {amount: "200 MAD", question: null}, {amount: "200 MAD", question: null}, {amount: "200 MAD", question: null},
-  {amount: "150 MAD", question: null}, {amount: "150 MAD", question: null}, {amount: "150 MAD", question: null}, 
-  {amount: "150 MAD", question: null}, {amount: "150 MAD", question: null}, {amount: "150 MAD", question: null},
-  {amount: "100 MAD", question: null}, {amount: "100 MAD", question: null}, {amount: "100 MAD", question: null}, 
-  {amount: "100 MAD", question: null}, {amount: "100 MAD", question: null}, {amount: "100 MAD", question: null},
-  {amount: "100 MAD", question: null}, {amount: "100 MAD", question: null}, {amount: "100 MAD", question: null}, 
+  {amount: "300 MAD", question: null},
+  {amount: "300 MAD", question: null},
+
+  // 10 prizes of 200 MAD
+  {amount: "200 MAD", question: null},
+  {amount: "200 MAD", question: null},
+  {amount: "200 MAD", question: null},
+  {amount: "200 MAD", question: null},
+  {amount: "200 MAD", question: null},
+  {amount: "200 MAD", question: null},
+  {amount: "200 MAD", question: null},
+  {amount: "200 MAD", question: null},
+  {amount: "200 MAD", question: null},
+  {amount: "200 MAD", question: null},
+
+  // 10 prizes of 150 MAD
+  {amount: "150 MAD", question: null},
+  {amount: "150 MAD", question: null},
+  {amount: "150 MAD", question: null},
+  {amount: "150 MAD", question: null},
+  {amount: "150 MAD", question: null},
+  {amount: "150 MAD", question: null},
+  {amount: "150 MAD", question: null},
+  {amount: "150 MAD", question: null},
+  {amount: "150 MAD", question: null},
+  {amount: "150 MAD", question: null},
+
+  // 7 prizes of 100 MAD
   {amount: "100 MAD", question: null},
-  {amount: "75 MAD", question: null}, {amount: "75 MAD", question: null}, {amount: "75 MAD", question: null}, 
-  {amount: "75 MAD", question: null}, {amount: "75 MAD", question: null}, {amount: "75 MAD", question: null},
-  {amount: "75 MAD", question: null}, {amount: "75 MAD", question: null}, {amount: "75 MAD", question: null}, 
-  {amount: "75 MAD", question: null},
-  {amount: "50 MAD", question: null}, {amount: "50 MAD", question: null}, {amount: "50 MAD", question: null}, 
-  {amount: "50 MAD", question: null}, {amount: "50 MAD", question: null}, {amount: "50 MAD", question: null},
-  {amount: "50 MAD", question: null}, {amount: "50 MAD", question: null}, {amount: "50 MAD", question: null}, 
+  {amount: "100 MAD", question: null},
+  {amount: "100 MAD", question: null},
+  {amount: "100 MAD", question: null},
+  {amount: "100 MAD", question: null},
+  {amount: "100 MAD", question: null},
+  {amount: "100 MAD", question: null},
+
+  // 5 prizes of 50 MAD
   {amount: "50 MAD", question: null},
-  {amount: "Answer a question correctly to try again!"},
-  {amount: "Answer a question correctly to try again!"},
-  {amount: "Answer a question correctly to try again!"},
-  {amount: "Answer a question correctly to try again!"},
-  {amount: "Answer a question correctly to try again!"},
-  {amount: "Answer a question correctly to try again!"},
-  {amount: "Answer a question correctly to try again!"},
-  {amount: "Answer a question correctly to try again!"},
-  {amount: "Answer a question correctly to try again!"},
-  {amount: "Answer a question correctly to try again!"},
+  {amount: "50 MAD", question: null},
+  {amount: "50 MAD", question: null},
+  {amount: "50 MAD", question: null},
+  {amount: "50 MAD", question: null}
 ];
 
 // Function to shuffle an array (Fisher-Yates shuffle algorithm)
